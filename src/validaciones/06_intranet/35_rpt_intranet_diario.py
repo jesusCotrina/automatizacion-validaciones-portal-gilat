@@ -8,7 +8,7 @@ import pandas as pd
 # ================================================================================================================================
 # ================================================================================================================================
 
-class RptInternetMensual:
+class RptIntranetDiario():
 
     def __init__(self):
         pass
@@ -20,12 +20,8 @@ class RptInternetMensual:
 
     def execute(self, region, tecnologia):
 
-        if region == "ICA":
-            return self.execute_ica()
-
-        elif region == "APURIMAC" and tecnologia == "RF":
-            return self.execute_apurimac_rf()
-        
+        if region == "CUSCO":
+            return self.execute_cusco()
 
         else:
             return self.execute_default()
@@ -34,6 +30,11 @@ class RptInternetMensual:
     # ================================================================================================================================
     # 3 Logica de reportes  ==========================     
     # ================================================================================================================================
+
+    def execute_cusco(self, region, tecnologia):
+
+        # Logica
+        pass
 
     def execute_ica(self, region, tecnologia):
 

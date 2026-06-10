@@ -21,20 +21,16 @@ class RptIndicadorVelocidadBajada01():
         
         if tecnologia == "FTTH":
             print("ejecutando FTTH",region,tecnologia)
-            return self.execute_ftth(region,tecnologia,ip1,maestro_x)
+            return self.execute_ftth(region,tecnologia)
 
         
         elif region == "APURIMAC" and tecnologia == "FTTH":
             print("ejecutando APURIMAC FTTH",region,tecnologia)
-            return self.execute_apurimac_ftth(region,tecnologia,ip3,maestro_z)
+            return self.execute_apurimac_ftth(region,tecnologia)
 
         else:
             return {}
     
-
-
-
-
 
     def execute_ftth(self,region, tecnologia):
         # ================================================================================================================================
@@ -42,28 +38,6 @@ class RptIndicadorVelocidadBajada01():
         # ================================================================================================================================
         A = open("/maestros/maestro_A.json", "r").read()    
         observaciones= ["observacion1","observacion2"]
-
-
-        # ================================================================================================================================
-        # LOGICA DE VALIDACION ==========================     
-        # ================================================================================================================================
-        observaion=funcion_1() 
-        
-        observaion = funcion_2()
-        funcion_3()
-
-
-        # ================================================================================================================================
-        # JSON DE RESULTADOS ==========================     
-        # ================================================================================================================================
-        if observaciones is None:
-            estado = VALIDADO
-        else:  
-            estado = OBSERVADO
-
-        json_final = {"estado": estado,"observaciones":observaciones}
-        return json_final
-
 
     def execute_rf(self,region, tecnologia):
 
