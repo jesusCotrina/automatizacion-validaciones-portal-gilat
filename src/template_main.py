@@ -32,7 +32,6 @@ def funcion_3():
         raise RuntimeError(mensaje)
 
 def main():
-    print("Ejecutando main")
     try:
         # ================================================================================================================================
         # LECTURA DE MAESTROS Y VARIABLES ==========================     
@@ -69,10 +68,11 @@ def main():
         return json_final
 
     except Exception as e:
-        print(f"Error en main: {e}")
-        
-        json_final = {"estado": estado,"observaciones":observaciones}
-        return {"estado": "ERROR", "observaciones": str(e)}
+        mensaje=f"Error en la ejecucion \nError:{e}"
+        print(mensaje)
+
+        json_final = {"estado": "ERROR","observaciones":[mensaje]}
+        return json_final
 
 
 if __name__ == "__main__":
