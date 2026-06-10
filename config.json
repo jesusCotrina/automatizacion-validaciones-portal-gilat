@@ -1,23 +1,23 @@
 {
-    "CUSCO" : {
-        "tecnologias": [
-            "FTTH",
-            "RF"
-        ]
-    },
-    "APURIMAC" : {
-        "tecnologias": [
-            "FTTH",
-            "RF"
-        ]
-    },
-    "AYACUCHO" : {
-        "tecnologias": [
-            "FTTH",
-            "RF"
-        ]
+    "periodo": "auto",
+    "regiones": {
+        "CUSCO" : {
+            "tecnologias": [
+                "FTTH",
+                "RF"
+            ]
+        },
+        "APURIMAC" : {
+            "tecnologias": [
+                "FTTH",
+                "RF"
+            ]
+        },
+        "AYACUCHO" : {
+            "tecnologias": [
+                "FTTH",
+                "RF"
+            ]
+        }
     }
-
-
-
 }
