@@ -1,37 +1,46 @@
 import json
-from validation import Validation
-
 import pkgutil
 import importlib
 import inspect
-
+import os
 
 ## VARIABLES GLOBALES
-path_config = "..\config.json"
+path_config = "../config.json"
 package_name = "validaciones"
 
 def discover_reportes():
     reportes = []
-    package = importlib.import_module(package_name)
 
-    for _, module_name, _ in pkgutil.walk_packages(
-        package.__path__,
-        package.__name__ + "."
-    ):
+    for root, _, files in os.walk("validaciones"):
 
-        module = importlib.import_module(module_name)
+        for file in files:
 
-        for _, obj in inspect.getmembers(
-            module,
-            inspect.isclass
-        ):
+            if not file.endswith(".py"):
+                continue
 
-            # Solo clases definidas en este módulo
-            if obj.__module__ == module.__name__:
-                reportes.append(obj())
+            if file == "__init__.py":
+                continue
+
+            ruta = os.path.join(root, file)
+
+            module_name = file[:-3]
+
+            spec = importlib.util.spec_from_file_location(
+                module_name,
+                ruta
+            )
+
+            module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(module)
+
+            for _, obj in inspect.getmembers(
+                module,
+                inspect.isclass
+            ):
+                if obj.__module__ == module.__name__:
+                    reportes.append(obj())
 
     return reportes
-
 
 
 def main ():
@@ -40,10 +49,9 @@ def main ():
 
     resultados  = []
     reportes    =  discover_reportes()
-
-    for region in config.keys():
-
-        for tecnologia in region["tecnologias"]:
+    print(f"Reportes encontrados: {[type(reporte).__name__ for reporte in reportes]}")
+    for region in config["regiones"].keys():
+        for tecnologia in config["regiones"][region]["tecnologias"]:
 
             for reporte in reportes:
 
@@ -54,3 +62,6 @@ def main ():
 
                 if resultado:
                     resultados.append(resultado)
+
+if __name__ == "__main__":
+    main()

@@ -2,17 +2,16 @@
 # IMPORTACION DE LIBRERIAS  ==========================     
 # ================================================================================================================================
 import pandas as pd
-
+from pathlib import Path
 
 
 # ================================================================================================================================
 # ================================================================================================================================
 
-class RptIndicadorVelocidadBajada():
+class RptIndicadorVelocidadSubida():
 
     def __init__(self):
-        self.maestro_ips    = open ("/maestros/maestro_ips.json", "r").read()
-
+        self.maestro_ips    = open ("../../../maestros/maestro_ips.json", "r").read()
 
         pass
 
@@ -20,7 +19,7 @@ class RptIndicadorVelocidadBajada():
 
         if tecnologia == "FTTH":
             return self.execute_ftth(region,tecnologia)
-        
+
         elif tecnologia == "RF":
             return self.execute_rf(region,tecnologia)
 
@@ -31,28 +30,14 @@ class RptIndicadorVelocidadBajada():
     def execute_ftth(self,region, tecnologia):
         self.maestro_ips["region"]["tecnologia"]
         # Logica
-        def cruce_maestro():
-            a
-        observaciones = []
-
-        observacion = leer_maestro()
-        observaciones.append
-        observacion = cruce_maestro()
-        llamado_api()
-        verificar_duplicados()
-
-        # 
-        subir_sharepoint()
-
-        return {"estado":"OBERVADO","observacion":observaciones}
         pass
 
-    def execute_rf(self,region, tecnologia):
+    def execute_rf(self):
 
         # Logica
         pass
     
-    def execute_apurimac_ftth(self):
+    def execute_apurimac(self):
 
         # Logica
         pass

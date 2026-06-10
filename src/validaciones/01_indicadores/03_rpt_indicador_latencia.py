@@ -11,7 +11,7 @@ import pandas as pd
 class RptIndicadorVelocidadBajada():
 
     def __init__(self):
-        self.maestro_ips    = open ("/maestros/maestro_ips.json", "r").read()
+        #self.maestro_ips    = open ("/maestros/maestro_ips.json", "r").read()
 
 
         pass
@@ -34,7 +34,7 @@ class RptIndicadorVelocidadBajada():
         pass
 
     def execute_rf(self):
-
+        
         # Logica
         pass
     
