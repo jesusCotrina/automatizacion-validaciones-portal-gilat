@@ -19,7 +19,8 @@ class RptInternetMensual:
     # ================================================================================================================================
 
     def execute(self, region, tecnologia):
-
+        return self.execute_default(region,tecnologia)
+    
         if region == "ICA":
             return self.execute_ica()
 

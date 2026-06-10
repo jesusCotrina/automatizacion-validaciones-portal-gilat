@@ -2,7 +2,7 @@
 # IMPORTACION DE LIBRERIAS  ==========================     
 # ================================================================================================================================
 import pandas as pd
-
+from utils.aux_fun  import *
 
 
 # ================================================================================================================================
@@ -17,36 +17,52 @@ class RptIndicadorVelocidadBajada01():
         pass
 
     def execute(self, region, tecnologia):
-
+        self.execute_ftth(region,tecnologia)
+        
         if tecnologia == "FTTH":
             print("ejecutando FTTH",region,tecnologia)
-            return self.execute_ftth(region,tecnologia)
+            return self.execute_ftth(region,tecnologia,ip1,maestro_x)
+
         
-        elif tecnologia == "RF":
-            print("ejecutando RF",region,tecnologia)
-            return self.execute_rf(region,tecnologia)
+        elif region == "APURIMAC" and tecnologia == "FTTH":
+            print("ejecutando APURIMAC FTTH",region,tecnologia)
+            return self.execute_apurimac_ftth(region,tecnologia,ip3,maestro_z)
 
         else:
             return {}
     
 
+
+
+
+
     def execute_ftth(self,region, tecnologia):
-        # self.maestro_ips["region"]["tecnologia"]
-        # # Logica
-        # def cruce_maestro():
-        #     a
-        # observaciones = []
+        # ================================================================================================================================
+        # LECTURA DE MAESTROS Y VARIABLES ==========================     
+        # ================================================================================================================================
+        A = open("/maestros/maestro_A.json", "r").read()    
+        observaciones= ["observacion1","observacion2"]
 
-        # observacion = leer_maestro()
-        # observaciones.append
-        # observacion = cruce_maestro()
-        # llamado_api()
-        # verificar_duplicados()
 
-        # # 
-        # subir_sharepoint()
+        # ================================================================================================================================
+        # LOGICA DE VALIDACION ==========================     
+        # ================================================================================================================================
+        observaion=funcion_1() 
+        
+        observaion = funcion_2()
+        funcion_3()
 
-        return {"estado":"OBERVADO","observacion":"observaciones"}
+
+        # ================================================================================================================================
+        # JSON DE RESULTADOS ==========================     
+        # ================================================================================================================================
+        if observaciones is None:
+            estado = VALIDADO
+        else:  
+            estado = OBSERVADO
+
+        json_final = {"estado": estado,"observaciones":observaciones}
+        return json_final
 
 
     def execute_rf(self,region, tecnologia):
