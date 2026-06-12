@@ -1,0 +1,4 @@
+2026-06-12 14:42:13 | INFO     | root | INICIANDO NUEVO PROCESO DE VALIDACION ================================================================
+2026-06-12 14:42:13 | INFO     | root | ==================================================
+2026-06-12 14:42:13 | INFO     | utils.email | Construyendo el cuerpo del correo...
+2026-06-12 14:42:13 | ERROR    | root | name 'zip_name' is not defined

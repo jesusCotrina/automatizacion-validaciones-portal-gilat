@@ -1,0 +1,3 @@
+2026-06-12 14:41:30 | INFO     | root | INICIANDO NUEVO PROCESO DE VALIDACION ================================================================
+2026-06-12 14:41:30 | INFO     | root | ==================================================
+2026-06-12 14:41:30 | ERROR    | root | enviar_correo() missing 2 required positional arguments: 'unidad' and 'fechas_inicio'

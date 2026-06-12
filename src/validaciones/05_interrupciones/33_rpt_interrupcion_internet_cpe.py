@@ -18,13 +18,13 @@ class RptInterrupcionInternetCPE():
     # 2 Logica de ejecucion  ==========================     
     # ================================================================================================================================
 
-    def execute(self, region, tecnologia):
+    def execute(self, region, tecnologia,periodo):
 
         if region == "CUSCO":
-            return self.execute_cusco()
+            return self.execute_cusco(region,tecnologia)
 
         else:
-            return self.execute_default()
+            return self.execute_default(region,tecnologia)
 
 
     # ================================================================================================================================

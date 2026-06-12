@@ -18,13 +18,12 @@ class RptInterrupcionInternetPOP():
     # 2 Logica de ejecucion  ==========================     
     # ================================================================================================================================
 
-    def execute(self, region, tecnologia):
-
-        if region == "CUSCO":
-            return self.execute_cusco()
-
+    def execute(self, region, tecnologia,periodo):
+        # PARA LOS REPORTES QUE TIENEN RF Y FTTH SOLO CONSIDERAR LA TECNOLOGIA FTTH COMO SI ESTUVIERA HACIENDO EL CONSOLIDADO
+        if tecnologia == "FTTH":
+            return self.execute_default(region,tecnologia)
         else:
-            return self.execute_default()
+            return {}
 
 
     # ================================================================================================================================
@@ -43,11 +42,13 @@ class RptInterrupcionInternetPOP():
 
     def execute_default(self, region, tecnologia):
 
+        observaciones= []
         # Logica
-        pass
+        return {"observaciones":observaciones, "estado":"VALIDADO","tecnologia":"RF/FTTH"}
 
     def execute_apurimac_rf(self, region, tecnologia):
 
+        observaciones= []
         # Logica
-        pass
+        return {"observaciones":observaciones, "estado":"VALIDADO","tecnologia":"RF/FTTH"}
     

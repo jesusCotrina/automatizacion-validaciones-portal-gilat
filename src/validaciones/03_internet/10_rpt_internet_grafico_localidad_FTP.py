@@ -18,17 +18,17 @@ class RptInternetGraficoLocalidad_FTP():
     # 2 Logica de ejecucion  ==========================     
     # ================================================================================================================================
 
-    def execute(self, region, tecnologia):
+    def execute(self, region, tecnologia,periodo):
 
         if region == "ICA":
-            return self.execute_ica()
+            return self.execute_ica(region,tecnologia)
 
         elif region == "APURIMAC" and tecnologia == "RF":
-            return self.execute_apurimac_rf()
+            return self.execute_apurimac_rf(region,tecnologia)
         
 
         else:
-            return self.execute_default()
+            return self.execute_default(region,tecnologia)
 
 
     # ================================================================================================================================

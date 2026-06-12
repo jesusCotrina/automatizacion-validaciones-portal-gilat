@@ -1,0 +1,178 @@
+{
+  "01": {
+    "tipo_reporte": "01",
+    "nombre": "Indicador - Velocidad de bajada"
+  },
+  "02": {
+    "tipo_reporte": "01",
+    "nombre": "Indicador - Velocidad de subida"
+  },
+  "03": {
+    "tipo_reporte": "01",
+    "nombre": "Indicador - Latencia"
+  },
+  "04": {
+    "tipo_reporte": "01",
+    "nombre": "Indicador - Pérdida de Paquetes"
+  },
+  "05": {
+    "tipo_reporte": "01",
+    "nombre": "Indicador - Consolidado"
+  },
+  "06": {
+    "tipo_reporte": "02",
+    "nombre": "RptTOEInternet_DiarioTOE"
+  },
+  "07": {
+    "tipo_reporte": "02",
+    "nombre": "RptInternet_MensualTOE"
+  },
+  "08": {
+    "tipo_reporte": "03",
+    "nombre": "RptInternet_Diario"
+  },
+  "09": {
+    "tipo_reporte": "03",
+    "nombre": "RptInternet_MensualTrafico"
+  },
+  "10": {
+    "tipo_reporte": "03",
+    "nombre": "RpInternetGraficoLocalidadxProtocolo_FTP"
+  },
+  "11": {
+    "tipo_reporte": "03",
+    "nombre": "RpInternetGraficoLocalidadxProtocolo_HTTP"
+  },
+  "12": {
+    "tipo_reporte": "03",
+    "nombre": "RpInternetGraficoLocalidadxProtocolo_OTROS"
+  },
+  "13": {
+    "tipo_reporte": "03",
+    "nombre": "RpInternetGraficoLocalidadxProtocolo_SMTP"
+  },
+  "14": {
+    "tipo_reporte": "03",
+    "nombre": "RptInternet_PaginasVisitadas"
+  },
+  "15": {
+    "tipo_reporte": "03",
+    "nombre": "RptInternet_VolumenTrafico"
+  },
+  "16": {
+    "tipo_reporte": "03",
+    "nombre": "RptInternet_Sesiones"
+  },
+  "17": {
+    "tipo_reporte": "03",
+    "nombre": "RpInternetGraficoCPExProtocolo_FTP"
+  },
+  "18": {
+    "tipo_reporte": "03",
+    "nombre": "RpInternetGraficoCPExProtocolo_HTTP"
+  },
+  "19": {
+    "tipo_reporte": "03",
+    "nombre": "RpInternetGraficoCPExProtocolo_OTROS"
+  },
+  "20": {
+    "tipo_reporte": "03",
+    "nombre": "RpInternetGraficoCPExProtocolo_SMTP"
+  },
+  "21": {
+    "tipo_reporte": "04",
+    "nombre": "RpInternetGraficoLocalidadGeneral"
+  },
+  "22": {
+    "tipo_reporte": "04",
+    "nombre": "RpInternetGraficoTotalRegionGeneral"
+  },
+  "23": {
+    "tipo_reporte": "04",
+    "nombre": "RpInternetGraficoLocalidad"
+  },
+  "24": {
+    "tipo_reporte": "04",
+    "nombre": "RpInternetGraficoTotalRegion"
+  },
+  "25": {
+    "tipo_reporte": "04",
+    "nombre": "RpInternetGraficoVolumenCPExProtocolo_FTP"
+  },
+  "26": {
+    "tipo_reporte": "04",
+    "nombre": "RpInternetGraficoVolumenCPExProtocolo_HTTP"
+  },
+  "27": {
+    "tipo_reporte": "04",
+    "nombre": "RpInternetGraficoVolumenCPExProtocolo_OTROS"
+  },
+  "28": {
+    "tipo_reporte": "04",
+    "nombre": "RpInternetGraficoVolumenCPExProtocolo_SMTP"
+  },
+  "29": {
+    "tipo_reporte": "04",
+    "nombre": "RpInternetGraficoVolumenCPExProtocolo_FTP"
+  },
+  "30": {
+    "tipo_reporte": "04",
+    "nombre": "RpInternetGraficoVolumenCPExProtocolo_HTTP"
+  },
+  "31": {
+    "tipo_reporte": "04",
+    "nombre": "RpInternetGraficoVolumenCPExProtocolo_OTROS"
+  },
+  "32": {
+    "tipo_reporte": "04",
+    "nombre": "RpInternetGraficoVolumenCPExProtocolo_SMTP"
+  },
+  "33": {
+    "tipo_reporte": "05",
+    "nombre": "RptInterrupcionInternetCPE"
+  },
+  "34": {
+    "tipo_reporte": "05",
+    "nombre": "RptInterrupcionInternetPOP"
+  },
+  "35": {
+    "tipo_reporte": "06",
+    "nombre": "RptIntranet_Diario"
+  },
+  "36": {
+    "tipo_reporte": "06",
+    "nombre": "RpIntranetGraficoLocalidad"
+  },
+  "37": {
+    "tipo_reporte": "06",
+    "nombre": "RpIntranetGraficoLocalidadGeneral"
+  },
+  "38": {
+    "tipo_reporte": "06",
+    "nombre": "RpIntranetGraficoServicio"
+  },
+  "39": {
+    "tipo_reporte": "06",
+    "nombre": "RpIntranetGraficoTotalRegion"
+  },
+  "40": {
+    "tipo_reporte": "06",
+    "nombre": "RpIntranetGraficoTotalRegionGeneral"
+  },
+  "41": {
+    "tipo_reporte": "06",
+    "nombre": "RpIntranetGraficoVolumenCPExServicio"
+  },
+  "42": {
+    "tipo_reporte": "06",
+    "nombre": "RptIntranet_MensualTrafico"
+  },
+  "43": {
+    "tipo_reporte": "06",
+    "nombre": "RptIntranet_Sesiones"
+  },
+  "44": {
+    "tipo_reporte": "06",
+    "nombre": "RptIntranet_VolumenTrafico"
+  }
+}

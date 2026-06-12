@@ -8,15 +8,15 @@ from utils.aux_fun  import *
 # ================================================================================================================================
 # ================================================================================================================================
 
-class RptIndicadorVelocidadBajada01():
+class RptIndicadorVelocidadBajada():
 
     def __init__(self):
         #self.maestro_ips    = open ("/maestros/maestro_ips.json", "r").read()
-
+        
 
         pass
 
-    def execute(self, region, tecnologia):
+    def execute(self, region, tecnologia,periodo):
         self.execute_ftth(region,tecnologia)
         
         if tecnologia == "FTTH":
@@ -36,8 +36,10 @@ class RptIndicadorVelocidadBajada01():
         # ================================================================================================================================
         # LECTURA DE MAESTROS Y VARIABLES ==========================     
         # ================================================================================================================================
-        A = open("/maestros/maestro_A.json", "r").read()    
+        #A = open("/maestros/maestro_A.json", "r").read()    
         observaciones= ["observacion1","observacion2"]
+
+        return {"observaciones":observaciones, "estado":"VALIDADO"}
 
     def execute_rf(self,region, tecnologia):
 
@@ -45,6 +47,6 @@ class RptIndicadorVelocidadBajada01():
         pass
     
     def execute_apurimac_ftth(self):
-
+        observaciones= ["observacion3","observacion4"]
         # Logica
-        pass
+        return {"observaciones":observaciones, "estado":"errpr"}

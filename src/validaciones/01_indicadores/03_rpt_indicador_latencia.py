@@ -16,7 +16,7 @@ class RptIndicadorVelocidadBajada():
 
         pass
 
-    def execute(self, region, tecnologia):
+    def execute(self, region, tecnologia,periodo):
 
         if tecnologia == "FTTH":
             return self.execute_ftth(region,tecnologia)
@@ -29,11 +29,11 @@ class RptIndicadorVelocidadBajada():
     
 
     def execute_ftth(self,region, tecnologia):
-        self.maestro_ips["region"]["tecnologia"]
+        #self.maestro_ips["region"]["tecnologia"]
         # Logica
         pass
 
-    def execute_rf(self):
+    def execute_rf(self,region,tecnologia):
         
         # Logica
         pass

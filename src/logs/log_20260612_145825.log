@@ -1,0 +1,7 @@
+2026-06-12 14:58:25 | INFO     | root | INICIANDO NUEVO PROCESO DE VALIDACION ================================================================
+2026-06-12 14:58:25 | INFO     | root | ====================================================================================================
+2026-06-12 14:58:25 | INFO     | utils.aux_fun_main | Archivo actualizado: ..\resultados\2026-05\control_resumen\resultados_totales.json
+2026-06-12 14:58:25 | INFO     | utils.email | Construyendo el cuerpo del correo...
+2026-06-12 14:58:25 | INFO     | utils.email | Correo enviado a: jcotrina@gilatla.com con asunto: 'Validacion de reportes SSRA' y adjunto: '../resultados/2026-05/resumen_validaciones.xlsx'
+2026-06-12 14:58:25 | INFO     | root | PROCESO FINALIZADO ================================================================
+2026-06-12 14:58:25 | INFO     | root | ====================================================================================================

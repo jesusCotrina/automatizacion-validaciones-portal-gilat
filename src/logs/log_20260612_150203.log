@@ -1,0 +1,4 @@
+2026-06-12 15:02:03 | INFO     | root | INICIANDO NUEVO PROCESO DE VALIDACION ================================================================
+2026-06-12 15:02:03 | INFO     | root | ====================================================================================================
+2026-06-12 15:02:03 | INFO     | utils.aux_fun_main | Archivo actualizado: ..\resultados\2026-05\control_resumen\resultados_totales.json
+2026-06-12 15:02:03 | ERROR    | root | name 'generar_tabla_correo' is not defined
